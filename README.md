@@ -22,7 +22,6 @@ It also aims to provide a comprehensive example of building a modern e-commerce 
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
 
-
 ## Introduction
 
 This project is a demonstration of building an e-commerce application using the MERN stack, which consists of MongoDB (database), Express.js (server), React.js (frontend), and Node.js (runtime environment). The application allows users to browse products, add them to a shopping cart, proceed to checkout, and simulate the order processing. It includes comprehensive validations for user inputs and simulates the checkout process on the backend.
@@ -42,24 +41,7 @@ The application is designed to be user-friendly and responsive, providing a seam
   <a href="https://www.mongodb.com/">
     <img src="https://img.shields.io/badge/MongoDB-6.x-47A248?logo=mongodb&logoColor=white" alt="MongoDB badge" />
   </a>
-  <a href="https://jestjs.io/">
-    <img src="https://img.shields.io/badge/Jest-29.x-C21325?logo=jest&logoColor=white" alt="Jest badge" />
-  </a>
-  <a href="https://mui.com/">
-    <img src="https://img.shields.io/badge/Material--UI-5.x-007FFF?logo=mui&logoColor=white" alt="Material UI badge" />
-  </a>
-  <a href="https://weaviate.io/">
-    <img src="https://img.shields.io/badge/Weaviate-Vector%20Database-FF6F00?logo=weblate&logoColor=white" alt="Weaviate badge" />
-  </a>
-  <a href="https://www.pinecone.io/">
-    <img src="https://img.shields.io/badge/Pinecone-Vector%20Database-0f9d58?logo=pinecone&logoColor=white" alt="Pinecone badge" />
-  </a>
-  <a href="https://https://ai.meta.com/tools/faiss/">
-    <img src="https://img.shields.io/badge/FAISS-Vector%20Search-00A4FF?logo=facebook&logoColor=white" alt="FAISS badge" />
-  </a>
-  <a href="https://www.langchain.com">
-    <img src="https://img.shields.io/badge/LangChain-LLM%20Framework-00A4FF?logo=langchain&logoColor=white" alt="LangChain badge" />
-  </a>
+
   <a href="https://www.npmjs.com/">
     <img src="https://img.shields.io/badge/npm-Node%20Package%20Manager-CB3837?logo=npm&logoColor=white" alt="npm badge" />
   </a>
@@ -69,15 +51,7 @@ The application is designed to be user-friendly and responsive, providing a seam
   <a href="https://www.render.com/">
     <img src="https://img.shields.io/badge/Render-Deploy-46E3B7?logo=render&logoColor=white" alt="Render badge" />
   </a>
-  <a href="https://swagger.io/">
-    <img src="https://img.shields.io/badge/Swagger-API%20Docs-85EA2D?logo=swagger&logoColor=black" alt="Swagger badge" />
-  </a>
-  <a href="https://www.docker.com/">
-    <img src="https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white" alt="Docker badge" />
-  </a>
-  <a href="https://jestjs.io/">
-    <img src="https://img.shields.io/badge/Jest-Testing-C21325?logo=jest&logoColor=white" alt="Jest badge" />
-  </a>
+
   <a href="https://reactjs.org/">
     <img src="https://img.shields.io/badge/React%20Testing%20Library-Testing-FF4088?logo=react&logoColor=white" alt="React Testing Library badge" />
   </a>
@@ -93,21 +67,10 @@ The application is designed to be user-friendly and responsive, providing a seam
   <a href="https://reactrouter.com/">
     <img src="https://img.shields.io/badge/React%20Router-Routing-DD0031?logo=reactrouter&logoColor=white" alt="React Router badge" />
   </a>
-  <a href="https://babel.io/">
-    <img src="https://img.shields.io/badge/Babel-Transpiler-F9DC3E?logo=babel&logoColor=black" alt="Babel badge" />
-  </a>
-  <a href="https://webpack.js.org/">
-    <img src="https://img.shields.io/badge/Webpack-Bundler-8DD6F9?logo=webpack&logoColor=black" alt="Webpack badge" />
-  </a>
-  <a href="https://craco.js.org/">
-    <img src="https://img.shields.io/badge/CRACO-Configuration-61DAFB?logo=react&logoColor=white" alt="CRACO badge" />
-  </a>
   <a href="https://react-hook-form.com/">
     <img src="https://img.shields.io/badge/React%20Hook%20Form-Forms-EC5990?logo=reacthookform&logoColor=white" alt="React Hook Form badge" />
   </a>
-  <a href="https://fkhadra.github.io/react-toastify/">
-    <img src="https://img.shields.io/badge/React%20Toastify-Notifications-FF8800?logo=react&logoColor=white" alt="React Toastify badge" />
-  </a>
+ 
   <a href="https://www.npmjs.com/package/react-credit-cards-2">
     <img src="https://img.shields.io/badge/React%20Credit%20Cards-Credit%20Card-FFCA28?logo=creditcard&logoColor=black" alt="React Credit Cards badge" />
   </a>
@@ -121,11 +84,9 @@ The **primary** backend server is deployed on Vercel and can be accessed at the 
 
 The **backup** backend server is deployed on Render and can be accessed at the following URL: **[Fusion Electronics API](https://fusion-electronics-api.vercel.app/).**
 
-> [!IMPORTANT]
-> **Note**: The backend server may take a few seconds to wake up if it has been inactive for a while. For your information, it is hosted on the free tier of Render, with 0.1 CPU and 512 MB of memory only, so it may take a bit longer to respond to requests, especially after periods of inactivity.
+> [!IMPORTANT] > **Note**: The backend server may take a few seconds to wake up if it has been inactive for a while. For your information, it is hosted on the free tier of Render, with 0.1 CPU and 512 MB of memory only, so it may take a bit longer to respond to requests, especially after periods of inactivity.
 
-> [!CAUTION]
-> **Warning**: The vector recommendation pipeline relies on Pinecone's serverless index (free tier). Please make sure your Pinecone project has enough credits and remains active; otherwise, recommendation calls may fall back to heuristic suggestions. You can always run the application locally and provision your own Pinecone and/or Weaviate instances—see [Product Recommendations with Vector Database](#product-recommendations-with-vector-database) for setup details.
+> [!CAUTION] > **Warning**: The vector recommendation pipeline relies on Pinecone's serverless index (free tier). Please make sure your Pinecone project has enough credits and remains active; otherwise, recommendation calls may fall back to heuristic suggestions. You can always run the application locally and provision your own Pinecone and/or Weaviate instances—see [Product Recommendations with Vector Database](#product-recommendations-with-vector-database) for setup details.
 
 ## User Interface
 
@@ -240,101 +201,110 @@ The **backup** backend server is deployed on Render and can be accessed at the f
 ## Features
 
 - **Product Management:**
-    - View a list of products.
-    - View detailed product information.
-    - Add products to the shopping cart.
+
+  - View a list of products.
+  - View detailed product information.
+  - Add products to the shopping cart.
 
 - **Shopping Cart:**
-    - View items in the shopping cart.
-    - Remove items from the cart.
-    - Calculate total amount of items in the cart.
+
+  - View items in the shopping cart.
+  - Remove items from the cart.
+  - Calculate total amount of items in the cart.
 
 - **Checkout Process:**
-    - Enter billing, shipping, and payment information.
-    - **Client-side credit card validation:**
-        - Luhn algorithm validation for card number verification
-        - Automatic card type detection (Visa, Mastercard, Amex, Discover, Diners Club, JCB)
-        - Real-time validation with visual error feedback
-        - Expiry date validation (checks for valid month and ensures card hasn't expired)
-        - CVC validation (3 digits for most cards, 4 for American Express)
-        - Email format validation
-    - Simulate the order creation process on the backend.
-    - Receive confirmation of order success.
+  - Enter billing, shipping, and payment information.
+  - **Client-side credit card validation:**
+    - Luhn algorithm validation for card number verification
+    - Automatic card type detection (Visa, Mastercard, Amex, Discover, Diners Club, JCB)
+    - Real-time validation with visual error feedback
+    - Expiry date validation (checks for valid month and ensures card hasn't expired)
+    - CVC validation (3 digits for most cards, 4 for American Express)
+    - Email format validation
+  - Simulate the order creation process on the backend.
+  - Receive confirmation of order success.
 
 > [!TIP]
 > When testing the checkout process, you can use the following test credit card number: `4242 4242 4242 4242` with any future expiry date and any CVC code. This is because we use Luhn algorithm validation for card number verification only, and no actual payment processing is done.
 
 - **User Authentication:**
-    - User registration and login.
-    - Password hashing for security.
-    - Protected routes for authenticated users.
-    - JWT-based authentication.
-    - Forgot and reset password functionality.
-    - User profile management (view and update profile information).
-    - Order history (view past orders).
+
+  - User registration and login.
+  - Password hashing for security.
+  - Protected routes for authenticated users.
+  - JWT-based authentication.
+  - Forgot and reset password functionality.
+  - User profile management (view and update profile information).
+  - Order history (view past orders).
 
 - **Product Recommendations:**
-    - Vector-based product recommendations using Pinecone (with optional Weaviate support).
-    - Similar products displayed on product detail pages.
+
+  - Vector-based product recommendations using Pinecone (with optional Weaviate support).
+  - Similar products displayed on product detail pages.
 
 - **Search Functionality:**
-    - Search products by name, description, brand, or category.
-    - Real-time search suggestions.
-    - Filter and sort search results.
-    - Pagination for search results.
-    - Debounced search input to optimize performance.
+
+  - Search products by name, description, brand, or category.
+  - Real-time search suggestions.
+  - Filter and sort search results.
+  - Pagination for search results.
+  - Debounced search input to optimize performance.
 
 - **Order Tracking:**
-    - View order status and details.
-    - Get estimated delivery date and tracking information.
+
+  - View order status and details.
+  - Get estimated delivery date and tracking information.
 
 - **Terms of Service & Privacy Policy:**
-    - Inform users about terms of service and privacy policy.
+
+  - Inform users about terms of service and privacy policy.
 
 - **Support Page:**
-    - Provide contact information and support resources.
-    - FAQ section.
-    - Contact form for user inquiries.
+
+  - Provide contact information and support resources.
+  - FAQ section.
+  - Contact form for user inquiries.
 
 - **Responsive Design:**
-    - Mobile-friendly layout.
-    - Responsive components for various screen sizes.
+  - Mobile-friendly layout.
+  - Responsive components for various screen sizes.
 
 ## Technologies Used
 
 - **Frontend:**
-    - React.js
-    - Material-UI for styling
-    - Axios for API requests
-    - `react-credit-cards-2` for credit card visualization
-    - `react-router-dom` for routing
-    - `react-hook-form` for form validation
-    - `react-toastify` for toast notifications
-    - Jest and React Testing Library for testing
+
+  - React.js
+  - Material-UI for styling
+  - Axios for API requests
+  - `react-credit-cards-2` for credit card visualization
+  - `react-router-dom` for routing
+  - `react-hook-form` for form validation
+  - `react-toastify` for toast notifications
+  - Jest and React Testing Library for testing
 
 - **Backend:**
-    - Node.js
-    - Express.js
-    - MongoDB (with Mongoose ODM)
-    - Axios for external API requests
-    - JsonWebToken for user authentication
-    - Bcrypt for password hashing
-    - Dotenv for environment variables
-    - Cors for cross-origin resource sharing
-    - Swagger for API documentation
-    - Nodemon for server hot-reloading
-    - **Middleware**: JWT for securing API endpoints
-    - **Pinecone** and **Weaviate** for product recommendations with vector databases
-    
+
+  - Node.js
+  - Express.js
+  - MongoDB (with Mongoose ODM)
+  - Axios for external API requests
+  - JsonWebToken for user authentication
+  - Bcrypt for password hashing
+  - Dotenv for environment variables
+  - Cors for cross-origin resource sharing
+  - Swagger for API documentation
+  - Nodemon for server hot-reloading
+  - **Middleware**: JWT for securing API endpoints
+  - **Pinecone** and **Weaviate** for product recommendations with vector databases
 
 - **Development Tools:**
-    - Jetbrains WebStorm (IDE)
-    - Postman (for API testing)
-    - Git (version control)
-    - npm (package manager)
-    - Docker (for containerization)
-    - GitHub Actions (for CI/CD)
-    - Vercel and Render (for deployment)
+  - Jetbrains WebStorm (IDE)
+  - Postman (for API testing)
+  - Git (version control)
+  - npm (package manager)
+  - Docker (for containerization)
+  - GitHub Actions (for CI/CD)
+  - Vercel and Render (for deployment)
 
 ## Project Structure
 
@@ -408,3 +378,4 @@ fullstack-ecommerce/
 └── setupProxy.js                  # Proxy configuration
 (... and more files not listed here ...)
 
+```
