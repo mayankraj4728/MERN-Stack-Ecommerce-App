@@ -170,7 +170,7 @@ function Footer() {
 
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} justifyContent="space-between" alignItems={{ xs: 'flex-start', md: 'center' }}>
           <Typography variant="body2" sx={{ color: 'rgba(226,232,240,0.7)' }}>
-            © {new Date().getFullYear()} Fusion Electronics. Crafted in California & powered worldwide.
+            © {new Date().getFullYear()} Fusion Electronics. All Right Reserved.
           </Typography>
           <Stack direction="row" spacing={2} sx={{ color: 'rgba(226,232,240,0.7)', display: { xs: 'none', sm: 'flex' } }}>
             {policyLinks.map(link => (
