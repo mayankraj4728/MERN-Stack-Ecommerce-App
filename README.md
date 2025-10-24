@@ -330,12 +330,6 @@ fullstack-ecommerce/
 │   │   ├── build-faiss-index.js   # Script to build FAISS index
 │   │   ├── search-faiss-index.js  # Script to search FAISS index
 │   │   ├── query-weaviate.js      # Script to query Weaviate
-│   │   ├── weaviate-upsert.js     # Script to upsert products to Weaviate
-│   │   ├── sync-weaviate.js       # Script to synchronize products with Weaviate
-│   │   └── sync-pinecone.js       # Script to synchronize products with Pinecone
-│   ├── seed/                      # Database seed data
-│   │   └── productSeeds.js        # Product seed data
-│   ├── services/                  # Shared services (e.g., Pinecone sync helpers)
 │   ├── weaviateClient.js          # Weaviate client setup
 │   ├── pineconeClient.js          # Pinecone client setup
 │   ├── faiss.sh                   # FAISS index setup script
@@ -374,8 +368,5 @@ fullstack-ecommerce/
 ├── tests/                         # Test files
 ├── .gitignore                     # Git ignore file
 ├── package.json                   # NPM package file
-├── jsconfig.json                  # JS config file
-└── setupProxy.js                  # Proxy configuration
-(... and more files not listed here ...)
 
 ```
